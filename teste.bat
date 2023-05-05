@@ -1,4 +1,2 @@
-powershell.exe -Command "Start-Process powershell.exe -NoNewWindow -ArgumentList 'Set-ExecutionPolicy RemoteSigned'"
-powershell.exe -File "%~dp0\programs.ps1"
+powershell.exe -ExecutionPolicy Bypass -Command "powershell.exe -File '%~dp0teste.ps1'" -WindowStyle Normal
 pause
-
